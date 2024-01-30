@@ -1,0 +1,279 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: #ffbdbd;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+}
+
+.contact {
+    width: fit-content;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    margin-right: 15px;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s; 
+    border-radius: 15px;
+}
+
+.contact:hover {
+    transform: scale(1.1);
+}
+
+.contact a {
+    padding: 10px;
+}
+
+footer {
+    background-color: #EEEEEE;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer a {
+    size: 20pt;
+}
+
+.intro {
+    background-color: #E6E6E6;
+    margin-top: 0px;
+    border-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stadium {
+    background-image: url(../images/Sanford-Stadium.jpg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 500px;
+    width: 2000px;
+}
+
+.stadiumparent {
+    display: flex;
+    flex-direction: row;
+}
+
+.headshot {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-image: url(../images/headshot.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    align-self: center;
+    padding: 0px;
+    margin-top: 0px;
+    transition: transform .2s;
+}
+
+.headshot:hover {
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: 30px;
+    color: crimson;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Sofia', serif;
+}
+
+.subtext {
+    text-align: center;
+    font-size: 20px;
+}
+
+.subtext p {
+    color: #555555;
+}
+
+.subtext h2 {
+    color: #222222;
+}
+
+.about {
+    text-align: center;
+}
+
+#hr1, #hr2 {
+    border-color: red;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform .2s; 
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.card h2 {
+    color: #222222;
+}
+
+#card1image {
+    background-image: url(../images/book.jpeg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cardtextbox {
+    background-color: #DDDDDD;
+    height: 300px;
+    width: 300px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#card2image {
+    background-image: url(../images/office.jpeg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#card3image {
+    background-image: url(../images/site.jpeg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.triplecard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.triplecard h2 {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20pt;
+}
+
+.triplecard p {
+    margin-left: 20px;
+    font-size: 15pt;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.triplecard dt{
+    margin-bottom: 5px;
+    font-size: 15pt;
+    margin-left: 20px;
+}
+
+.triplecard dd {
+    margin-bottom: 5px;
+    font-size: 15pt;
+    margin-left: 40px;
+}
+
+.contactinfo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactinfo p {
+    font-size: 15pt;
+}
+
+@media all and (max-width: 1000px) {
+    .triplecard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .triplecard {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+form {
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 120px;
+    border-radius: 20px;
+}
+
+.formwrapper {
+    height: 600px;
+    background-image: url(../images/arch.jpg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    justify-content: center;
+    display: flex;
+}
+
+#contacthr {
+    border-color: red;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
