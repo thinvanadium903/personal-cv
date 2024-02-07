@@ -2,6 +2,10 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3, p, li, ul, ol, a {
+    font-family: sans-serif
+}
+
 nav {
     background-color: #ffbdbd;
     height: 100px;
